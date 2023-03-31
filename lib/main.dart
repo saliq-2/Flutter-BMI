@@ -114,7 +114,7 @@ class homepage_state extends State<homepage>
               ),
               ListTile(
                 leading: Icon(Icons.health_and_safety),
-                title:Text("What is BMR") ,
+                title:Text("What is BMR?") ,
                 onTap:(){
                   Navigator.pop(context);
                   Navigator.push(context, MaterialPageRoute(builder: (context)=>bmr_info()),);
