@@ -71,6 +71,12 @@ class homepage_state extends State<homepage>
       appBar: AppBar(
         backgroundColor: Colors.pinkAccent,
         title: Text("YourBMI"),
+        actions: [
+          IconButton(onPressed: (){
+
+
+          }, icon: Icon(Icons.info)),
+        ],
         bottom: TabBar(
           tabs: [
             Tab(text:"BMI",),
@@ -90,7 +96,8 @@ class homepage_state extends State<homepage>
           child: ListView(
             //padding: EdgeInsets.only(bottom: 8),
             children: [
-              const DrawerHeader(decoration: BoxDecoration(
+              const DrawerHeader(
+                decoration: BoxDecoration(
                 color: Colors.white60,
 
 
@@ -108,7 +115,7 @@ class homepage_state extends State<homepage>
                   Navigator.pop(context);
                  Navigator.push(context, MaterialPageRoute(builder: (context)=>bmi_info()));
 
-                },
+               },
 
 
               ),
@@ -305,7 +312,8 @@ class homepage_state extends State<homepage>
                    value:dropdownvalue ,
 
                     items:gender.map((e) => DropdownMenuItem(
-                      child: Text(e),value:e ,)).toList(),
+                      child: Text(e),
+                      value:e ,)).toList(),
                       onChanged:(String? e){
                        setState((){
                         dropdownvalue=e;
