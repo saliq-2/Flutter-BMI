@@ -104,7 +104,7 @@ class homepage_state extends State<homepage>
               ),child:CircleAvatar(
                 radius: 150,
 
-                backgroundImage: AssetImage("/Users/saliqneyaz/StudioProjects/bmi/assets/Images/food.jpg"),
+                backgroundImage: AssetImage("assets/Images/food.jpg"),
               ),
 
               ),
