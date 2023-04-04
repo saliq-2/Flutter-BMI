@@ -212,7 +212,12 @@ class homepage_state extends State<homepage>
 
                     }
 
-                }, child: Text("Calculate")),
+                }, child: Text("Calculate"),style: ElevatedButton.styleFrom(
+
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(11),
+                  )
+                ),),
 
 
 
@@ -358,7 +363,7 @@ class homepage_state extends State<homepage>
 
                   }, child: Text("Calculate"),
                     style: ElevatedButton.styleFrom(
-                    primary:Colors.blue ,
+
                     //onPrimary: Colors.red,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(11),
